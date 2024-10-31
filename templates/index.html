@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote</title>
+</head>
+<body>
+    <h1>Случайная цитата</h1>
+    <blockquote>
+        <p>"{{ quote }}"</p>
+        <footer>- {{ author or "Неизвестный автор" }}</footer>
+    </blockquote>
+    <a href="{{ url_for('new_quote') }}">
+        <button>Показать новую цитату</button>
+    </a>
+</body>
+</html>
